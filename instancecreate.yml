@@ -5,8 +5,8 @@
       instance_type: "t2.micro"
       ami: "ami-08e4e35cccc6189f4"
       keypair: "keerthysith"
-      subnetname: ""
-      sg_group: "subnet-22451644"
+      subnetname: "subnet-22451644"
+      sg_group: "sg-03d2d864dd279f85b"
   tasks:
   - ec2:
      key_name: "{{keypair}}"
@@ -14,7 +14,7 @@
      region: "{{region}}"
      vpc_subnet_id: "{{subnet-22451644}}"
      wait: yes
-     group: "{{sg_group}}"
+     group: "{{sg-03d2d864dd279f85b}}"
      count: 1
      count_tag:
             Name: keerthysith
