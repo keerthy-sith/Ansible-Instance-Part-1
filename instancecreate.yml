@@ -12,9 +12,9 @@
      key_name: "{{keypair}}"
      image: "{{ami}}"
      region: "{{region}}"
-     vpc_subnet_id: "{{subnet-22451644}}"
+     vpc_subnet_id: "{{subnetname}}"
      wait: yes
-     group: "{{sg-03d2d864dd279f85b}}"
+     group: "{{sg_group}}"
      count: 1
      count_tag:
             Name: instancecount
